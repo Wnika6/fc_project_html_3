@@ -3,6 +3,9 @@
 	padding: 0;
 	margin: 0;
 }
+html {
+	scroll-behavior: smoth;
+}
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -103,12 +106,13 @@ body {
 	line-height: 28.8px;
 }
 
-.header-link {
+.header-btn {
 	width: 170px;
 	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: none;
 	border-radius: 50px;
 	background-color: rgba(156, 105, 226, 1);
 	color: rgba(255, 255, 255, 1);
@@ -233,16 +237,16 @@ body {
 }
 
 .bgr-one {
-	background-image: url(./img/Rectangle\ 1.svg);
+	background-image: url(./img/Rectangle-1.svg);
 }
 .bgr-two {
-	background-image: url(./img/Rectangle\ 2.svg);
+	background-image: url(./img/Rectangle-2.svg);
 }
 .bgr-three {
-	background-image: url(./img/Rectangle\ 3.svg);
+	background-image: url(./img/Rectangle-3.svg);
 }
 .bgr-four {
-	background-image: url(./img/Rectangle\ 4.svg);
+	background-image: url(./img/Rectangle-4.svg);
 }
 
 .feature-text {
@@ -295,8 +299,13 @@ body {
 
 .carousel-items {
 	display: flex;
-	width: 100vw;
+	width: 950px;
 	gap: 27px;
+	border-radius: 20px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scrollbar-width: none;
+	box-shadow: 0 20px rgba(108, 61, 174, 0.3);
 }
 
 .testimonials-sub-title {
@@ -306,18 +315,17 @@ body {
 
 .carousel-item {
 	display: flex;
+	flex-shrink: 0;
 	gap: 30px;
-	width: 645px;
+	width: 950px;
 	height: 330px;
 	background-color: rgba(255, 255, 255, 1);
 	border-radius: 20px;
 	border: 1px solid rgba(156, 105, 226, 1);
-	box-shadow: 0 20px rgba(108, 61, 174, 0.3);
 }
 
-.carousel-item-two {
+/* .carousel-item-two {
 	position: relative;
-	width: 400px;
 }
 
 .carousel-item-two:after {
@@ -328,14 +336,8 @@ body {
 	content: '';
 	border-radius: 20px;
 	box-shadow: inset -100px 0px 58px -24px rgb(255, 255, 255);
-}
+} */
 
-.inner-item {
-	display: flex;
-	gap: 30px;
-	flex-shrink: 0;
-	width: 505px;
-}
 .carousel-img {
 	width: 100px;
 	height: 100px;
@@ -348,7 +350,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 385px;
+	width: 700px;
 	height: 200px;
 }
 .testimony-name {
@@ -442,7 +444,7 @@ body {
 	gap: 30px;
 }
 
-.trial-link {
+.trial-btn {
 	background-color: rgba(240, 99, 184, 1);
 }
 .footer-container {
@@ -493,6 +495,7 @@ body {
 	gap: 15px;
 	padding-top: 30px;
 }
+
 .circle {
 	display: grid;
 	place-content: center;
@@ -502,6 +505,7 @@ body {
 	background-color: rgba(33, 35, 83, 1);
 	opacity: 10%;
 	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
 }
 
 .footer-bottom {
